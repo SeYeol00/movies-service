@@ -28,6 +28,13 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
+
+    // WireMock
+    // 이거 스프링 클라우드에 있다.
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-contract-stub-runner
+    testImplementation("org.springframework.cloud:spring-cloud-starter-contract-stub-runner:3.1.3")
+
+
 }
 
 tasks.withType<KotlinCompile> {
